@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BenHamaden - Global Trade Excellence Since 1970 | Export & Import Solutions</title>
+    <meta name="description"
+        content="BenHamaden is a leading global trade enterprise in Chad, founded in 1970. We provide comprehensive export and import solutions, logistics, and customs clearance services.">
+    <meta name="keywords"
+        content="BenHamaden, Ben Hamaden, Global Trade, Export Import Chad, International Trade Excellence, Dr. Sami Adam, Trade Solutions Since 1970">
+    <link rel="canonical" href="https://www.benhamaden.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.benhamaden.com/">
+    <meta property="og:title" content="BenHamaden - Global Trade Excellence Since 1970">
+    <meta property="og:description"
+        content="Comprehensive A-to-Z export and import solutions with over 50 years of expertise.">
+    <meta property="og:image" content="https://www.benhamaden.com/assets/img/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.benhamaden.com/">
+    <meta property="twitter:title" content="BenHamaden - Global Trade Excellence Since 1970">
+    <meta property="twitter:description"
+        content="Comprehensive A-to-Z export and import solutions with over 50 years of expertise.">
+    <meta property="twitter:image" content="https://www.benhamaden.com/assets/img/og-image.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BenHamaden",
+      "alternateName": "Ben Hamaden",
+      "url": "https://www.benhamaden.com",
+      "logo": "https://www.benhamaden.com/assets/img/favicon.png",
+      "foundingDate": "1970",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "Dr. Sami Adam's Father"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue Charles de Gaulle",
+        "addressLocality": "N'Djamena",
+        "addressCountry": "TD"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+235-66406019",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/benhamaden",
+        "https://www.linkedin.com/company/benhamaden"
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /* Page-specific overrides for Hero video background */
+        #hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(2, 6, 23, 0.7) 0%, rgba(2, 6, 23, 0.4) 100%);
+            z-index: -1;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 10;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            font-weight: 800;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .stats {
+            background: var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats::after {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: var(--accent-color);
+            filter: blur(150px);
+            opacity: 0.1;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item h2 {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo magnetic-item">
+                <i class="fas fa-globe"></i> BenHamaden
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="expertise.html" data-i18n="nav.expertise">Expertise</a></li>
+                <li><a href="values.html" data-i18n="nav.values">Values</a></li>
+                <li><a href="heritage.html" data-i18n="nav.heritage">Heritage</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                <li class="lang-switch">
+                    <select id="lang-toggle" class="lang-select">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="ar">العربية</option>
+                        <option value="es">Español</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="text-huge" style="top: 10%; right: -5%;">GLOBAL</div>
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/Home_screen.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+
+        <div class="container hero-content">
+            <div data-aos="fade-up" data-aos-duration="1200">
+                <h1 data-i18n="hero.title">A Legacy of Global Trade Excellence Since 1970</h1>
+                <p data-i18n="hero.description"
+                    style="font-size: 1.25rem; margin-bottom: 40px; color: var(--text-secondary); max-width: 700px;">
+                    BenHamaden delivers comprehensive A-to-Z export and import solutions, enabling seamless trade across
+                    international markets.
+                </p>
+                <div class="hero-btns">
+                    <a href="about.html" class="btn btn-primary magnetic-item" data-i18n="hero.btn.discover">Discover
+                        More</a>
+                    <a href="contact.html" class="btn btn-outline magnetic-item" style="margin-left: 15px;"
+                        data-i18n="hero.btn.contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="quick-overview">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="why.title">Why Choose BenHamaden</h2>
+                <p>Five decades of expertise at your service.</p>
+            </div>
+            <div class="feature-panel-grid">
+                <!-- 50+ Years -->
+                <div class="feature-panel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-box">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="why.card1.title">50+ Years of Excellence</h3>
+                        <p data-i18n="why.card1.desc">Established in 1970, we bring over five decades of proven
+                            international trade expertise to every partnership.</p>
+                    </div>
+                </div>
+
+                <!-- Global Reach -->
+                <div class="feature-panel" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-box">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="why.card2.title">Global Reach</h3>
+                        <p data-i18n="why.card2.desc">Headquartered in Chad with a strong operational footprint across
+                            international markets, connecting businesses worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Trusted Partner -->
+                <div class="feature-panel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-box">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="why.card3.title">Trusted Partner</h3>
+                        <p data-i18n="why.card3.desc">Building lasting relationships through integrity, reliability, and
+                            uncompromising quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <h2 class="counter" data-target="53">0</h2>
+                    <p data-i18n="stats.years">Years in Business</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <h2 class="counter" data-target="150">0</h2>
+                    <p data-i18n="stats.partners">Global Partners</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <h2 class="counter" data-target="5000">0</h2>
+                    <p data-i18n="stats.transactions">Transactions</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <h2 class="counter" data-target="75">0</h2>
+                    <p data-i18n="stats.countries">Countries Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="gallery_section.title">Trade Excellence in Motion</h2>
+                <p data-i18n="gallery_section.subtitle">A glimpse into our global operations and logistics network.</p>
+            </div>
+        </div>
+
+        <div class="gallery-slider">
+            <div class="gallery-track">
+                <!-- Original Set of 11 Images -->
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/port.jpg" alt="Strategic Ports" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Strategic Ports</h3>
+                            <p>Operating across key international maritime hubs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/warehouse.jpg" alt="Smart Warehousing" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Smart Warehousing</h3>
+                            <p>Advanced storage and supply chain management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/logistics.jpg" alt="Global Logistics" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Logistics</h3>
+                            <p>Seamless transport solutions spanning continents.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adding more images from assets/gallery -->
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic1.jpg" alt="Supply Chain" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Supply Chain</h3>
+                            <p>Modern distribution networks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic2.jpg" alt="Global Trade" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Trade</h3>
+                            <p>Connecting international markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic3.jpg" alt="Freight Forwarding" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Freight Forwarding</h3>
+                            <p>Reliable cargo transportation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic5.jpg" alt="Trade Solutions" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Trade Solutions</h3>
+                            <p>Customized export-import services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic6.jpg" alt="Global Operations" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Operations</h3>
+                            <p>Expanding our reach worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic7.jpg" alt="Maritime Logistics" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Maritime Logistics</h3>
+                            <p>Efficient sea freight management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic8.jpg" alt="Warehouse Management" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Warehouse Management</h3>
+                            <p>Optimized inventory solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicated Set for Seamless Loop -->
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/port.jpg" alt="Strategic Ports" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Strategic Ports</h3>
+                            <p>Operating across key international maritime hubs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/warehouse.jpg" alt="Smart Warehousing" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Smart Warehousing</h3>
+                            <p>Advanced storage and supply chain management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/logistics.jpg" alt="Global Logistics" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Logistics</h3>
+                            <p>Seamless transport solutions spanning continents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic1.jpg" alt="Supply Chain" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Supply Chain</h3>
+                            <p>Modern distribution networks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic2.jpg" alt="Global Trade" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Trade</h3>
+                            <p>Connecting international markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic3.jpg" alt="Freight Forwarding" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Freight Forwarding</h3>
+                            <p>Reliable cargo transportation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic4.jpg" alt="Logistics Excellence" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Logistics Excellence</h3>
+                            <p>Precision in every shipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic5.jpg" alt="Trade Solutions" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Trade Solutions</h3>
+                            <p>Customized export-import services.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic6.jpg" alt="Global Operations" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Global Operations</h3>
+                            <p>Expanding our reach worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic7.jpg" alt="Maritime Logistics" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Maritime Logistics</h3>
+                            <p>Efficient sea freight management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img-wrapper">
+                        <img src="assets/gallery/pic8.jpg" alt="Warehouse Management" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Warehouse Management</h3>
+                            <p>Optimized inventory solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" style="background: var(--secondary-color); text-align: center;">
+        <div class="container" data-aos="fade-up">
+            <h2 data-i18n="cta.title" style="font-size: 2.5rem; margin-bottom: 20px;">Expand Your Global Trade
+                Operations</h2>
+            <p data-i18n="cta.desc" style="max-width: 700px; margin: 0 auto 40px; color: var(--text-secondary);">
+                Partner with BenHamaden for reliable, efficient, and compliant international trade solutions.
+            </p>
+            <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-brand-mark">BENHAMADEN</div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <a href="index.html" class="logo magnetic-item" style="margin-bottom: 25px; display: block;">
+                        <i class="fas fa-globe"></i> BenHamaden
+                    </a>
+                    <p data-i18n="footer.tagline"
+                        style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.8;">
+                        A Legacy of Global Trade Excellence Since 1970. Connecting markets with integrity and precision.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="#" class="social-circle magnetic-item"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-circle magnetic-item"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-circle magnetic-item"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-circle magnetic-item"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quicklinks">Quick Links</h3>
+                    <ul class="footer-links" style="margin-top: 20px;">
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+                        <li><a href="expertise.html" data-i18n="nav.expertise">Expertise</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.services.title">Services</h3>
+                    <ul class="footer-links" style="margin-top: 20px;">
+                        <li><a href="expertise.html" data-i18n="footer.services.export">Export Operations</a></li>
+                        <li><a href="expertise.html" data-i18n="footer.services.import">Import Solutions</a></li>
+                        <li><a href="expertise.html" data-i18n="footer.services.customs">Customs Clearance</a></li>
+                        <li><a href="expertise.html">Logistics Strategy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contact">Contact Info</h3>
+                    <div style="margin-top: 20px;">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Avenue Charles de Gaulle, N'Djamena, Chad</p>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+235 66406019</p>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>support@benhamaden.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.rights">&copy; 2023 BenHamaden. All Rights Reserved.</p>
+                <div style="display: flex; gap: 30px;">
+                    <a href="#" style="color: var(--text-secondary); text-decoration: none;">Privacy Policy</a>
+                    <a href="#" style="color: var(--text-secondary); text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Loader
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            gsap.to(loader, {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => loader.style.display = 'none'
+            });
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // GSAP Counter Animation
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.querySelectorAll('.counter').forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            gsap.to(counter, {
+                innerText: target,
+                duration: 2,
+                snap: { innerText: 1 },
+                scrollTrigger: {
+                    trigger: counter,
+                    start: "top 90%",
+                },
+                onUpdate: function () {
+                    counter.innerText = Math.ceil(counter.innerText) + '+';
+                }
+            });
+        });
+
+        // Hover effect for cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                gsap.to(card, { y: -10, duration: 0.3 });
+            });
+            card.addEventListener('mouseleave', () => {
+                gsap.to(card, { y: 0, duration: 0.3 });
+            });
+        });
+    </script>
+    <script src="assets/js/smooth-scroll.js"></script>
+    <script src="assets/js/premium.js"></script>
+</body>
+
+</html>

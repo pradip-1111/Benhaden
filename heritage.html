@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Heritage - BenHamaden | 50 Years of Global Trade Excellence</title>
+  <meta name="description"
+    content="Explore BenHamaden's rich heritage and journey since 1970. A legacy of trust, quality, and global trade excellence started by Dr. Sami Adam's father.">
+  <meta name="keywords" content="BenHamaden Heritage, History, Global Trade Legacy, Dr. Sami Adam, Trade History Chad">
+  <link rel="canonical" href="https://www.benhamaden.com/heritage.html" />
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    .page-header {
+      padding: 180px 0 100px;
+      background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)),
+        url("assets/heritage_trade.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .heritage-timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    .heritage-timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--accent-color);
+      opacity: 0.3;
+      transform: translateX(-50%);
+    }
+
+    .timeline-box {
+      width: 45%;
+      margin-bottom: 50px;
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 30px;
+      transition: var(--transition);
+    }
+
+    .timeline-box:hover {
+      border-color: var(--accent-color);
+      background: rgba(30, 41, 59, 1);
+      transform: translateY(-5px);
+    }
+
+    .timeline-box.left {
+      margin-right: auto;
+      text-align: right;
+    }
+
+    .timeline-box.right {
+      margin-left: auto;
+    }
+
+    .timeline-box::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: var(--accent-color);
+      border: 4px solid var(--primary-color);
+      border-radius: 50%;
+      top: 40px;
+      z-index: 10;
+    }
+
+    .timeline-box.left::after {
+      right: -60px;
+    }
+
+    .timeline-box.right::after {
+      left: -60px;
+    }
+
+    .year-tag {
+      display: inline-block;
+      padding: 5px 15px;
+      background: var(--accent-color);
+      color: var(--primary-color);
+      border-radius: 100px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .founder-card {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 30px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      align-items: center;
+    }
+
+    .founder-img {
+      height: 100%;
+      min-height: 400px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .heritage-timeline::before {
+        left: 20px;
+      }
+
+      .timeline-box {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        text-align: left !important;
+      }
+
+      .timeline-box::after {
+        left: -50px !important;
+      }
+
+      .founder-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <nav class="container">
+      <a href="index.html" class="logo magnetic-item">
+        <i class="fas fa-globe"></i> BenHamaden
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li>
+          <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+        </li>
+        <li><a href="values.html" data-i18n="nav.values">Values</a></li>
+        <li>
+          <a href="heritage.html" class="active" data-i18n="nav.heritage">Heritage</a>
+        </li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li class="lang-switch">
+          <select id="lang-toggle" class="lang-select">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+            <option value="es">Español</option>
+            <option value="zh">中文</option>
+          </select>
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container" data-aos="fade-up">
+      <h1 data-i18n="heritage.header.title" style="font-size: 3.5rem; margin-bottom: 20px">
+        Our Heritage
+      </h1>
+      <p data-i18n="heritage.header.subtitle" style="
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+          ">
+        A legacy of excellence spanning over half a century
+      </p>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="founder" style="padding: 120px 0">
+    <div class="container">
+      <div class="founder-card glass-card" data-aos="fade-up" data-cursor="Vision">
+        <div class="ceo-quote-mark">“</div>
+        <div class="founder-img-wrapper">
+          <img src="./assets/CEO.jpeg" alt="Ben Hamaden" class="founder-img" />
+        </div>
+        <div style="padding: 60px; position: relative; z-index: 2">
+          <div class="tag" style="
+                margin-bottom: 20px;
+                color: var(--accent-color);
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+              ">
+            Founder's Voice
+          </div>
+          <h2 data-i18n="heritage.founder.title" style="font-size: 2.5rem; margin-bottom: 30px">
+            A Legacy Built on Trust
+          </h2>
+          <blockquote data-i18n="heritage.founder.text" style="
+                font-size: 1.3rem;
+                line-height: 1.8;
+                color: var(--text-secondary);
+                font-style: italic;
+                margin-bottom: 40px;
+                position: relative;
+              ">
+            "When I started BenHamaden in 1970, my vision was simple: to build
+            a company that stands for trust and quality. Over the decades, we
+            have evolved with the global market, but our core principles
+            remain unchanged. We are more than a trade company; we are a
+            partner in our clients' success."
+          </blockquote>
+          <div class="founder-meta">
+            <span class="ceo-signature">Dr. Mahamat Sami</span>
+            <p style="font-weight: 600; color: var(--white); margin-top: 10px">
+              CEO of BenHamaden
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Legacy Section -->
+  <section class="heritage-legacy-image" style="padding: 100px 0; background: var(--bg-main);">
+    <div class="container">
+      <div
+        style="position: relative; border-radius: 40px; overflow: hidden; height: 500px; border: 1px solid var(--glass-border);">
+        <img src="assets/heritage_legacy.jpg" alt="Legacy Trade" style="width: 100%; height: 100%; object-fit: cover;">
+        <div
+          style="position: absolute; inset: 0; background: linear-gradient(rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.7)); display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px;">
+          <div data-aos="zoom-in">
+            <h2 data-i18n="heritage.legacy_section.title" style="font-size: 3rem; margin-bottom: 20px;">A Tradition of
+              Excellence</h2>
+            <p style="max-width: 800px; font-size: 1.2rem; line-height: 1.8;">Carrying forward a 50-year-old tradition
+              of connecting markets through integrity and mutual growth. Our legacy is built on the trust of our
+              partners worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="history-timeline" style="
+        background: var(--secondary-color);
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+      ">
+    <div class="text-huge" style="top: 10%; right: -5%">JOURNEY</div>
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 data-i18n="heritage.timeline.title">Journey Through Time</h2>
+      </div>
+
+      <div class="heritage-timeline">
+        <!-- 1970 -->
+        <div class="timeline-box left" data-aos="fade-right">
+          <span class="year-tag">1970</span>
+          <h3 data-i18n="heritage.timeline.item1.title" style="margin-bottom: 10px">
+            Foundation
+          </h3>
+          <p data-i18n="heritage.timeline.item1.desc" style="color: var(--text-secondary)">
+            The establishment of BenHamaden with a focus on local African
+            trade markets.
+          </p>
+        </div>
+
+        <!-- 1985 -->
+        <div class="timeline-box right" data-aos="fade-left">
+          <span class="year-tag">1985</span>
+          <h3 data-i18n="heritage.timeline.item2.title" style="margin-bottom: 10px">
+            Regional expansion
+          </h3>
+          <p data-i18n="heritage.timeline.item2.desc" style="color: var(--text-secondary)">
+            Expanding operations across sub-Saharan Africa and establishing
+            key trade routes.
+          </p>
+        </div>
+
+        <!-- 2000 -->
+        <div class="timeline-box left" data-aos="fade-right">
+          <span class="year-tag">2000</span>
+          <h3 data-i18n="heritage.timeline.item3.title" style="margin-bottom: 10px">
+            Global Integration
+          </h3>
+          <p data-i18n="heritage.timeline.item3.desc" style="color: var(--text-secondary)">
+            Entering Asian and European markets, diversifying our product
+            portfolio significantly.
+          </p>
+        </div>
+
+        <!-- 2015 -->
+        <div class="timeline-box right" data-aos="fade-left">
+          <span class="year-tag">2015</span>
+          <h3 data-i18n="heritage.timeline.item4.title" style="margin-bottom: 10px">
+            Digital Transformation
+          </h3>
+          <p data-i18n="heritage.timeline.item4.desc" style="color: var(--text-secondary)">
+            Implementing advanced logistics tracking and digital trade
+            platforms for enhanced efficiency.
+          </p>
+        </div>
+
+        <!-- 2023 -->
+        <div class="timeline-box left" data-aos="fade-right">
+          <span class="year-tag">2023</span>
+          <h3 data-i18n="heritage.timeline.item5.title" style="margin-bottom: 10px">
+            Modern Legacy
+          </h3>
+          <p data-i18n="heritage.timeline.item5.desc" style="color: var(--text-secondary)">
+            Continuing our journey as a leader in global trade with a renewed
+            focus on sustainability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legacy Milestones -->
+  <section class="milestones" style="padding: 100px 0">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2 data-i18n="heritage.milestones.title">Legacy Milestones</h2>
+      </div>
+      <div style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+          ">
+        <div class="glass-card" style="padding: 40px; text-align: center" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-globe-africa" style="
+                font-size: 3rem;
+                color: var(--accent-color);
+                margin-bottom: 20px;
+              "></i>
+          <h3 style="margin-bottom: 15px">Central African Leader</h3>
+          <p style="color: var(--text-secondary)">
+            Recognized as the primary trade gateway for Central Africa for
+            three consecutive decades.
+          </p>
+        </div>
+        <div class="glass-card" style="padding: 40px; text-align: center" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-handshake" style="
+                font-size: 3rem;
+                color: var(--accent-color);
+                margin-bottom: 20px;
+              "></i>
+          <h3 style="margin-bottom: 15px">Strategic Partnerships</h3>
+          <p style="color: var(--text-secondary)">
+            Over 500+ long-term international trade partnerships established
+            across 4 continents.
+          </p>
+        </div>
+        <div class="glass-card" style="padding: 40px; text-align: center" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-medal" style="
+                font-size: 3rem;
+                color: var(--accent-color);
+                margin-bottom: 20px;
+              "></i>
+          <h3 style="margin-bottom: 15px">Quality Awards</h3>
+          <p style="color: var(--text-secondary)">
+            Recipient of multiple international excellence awards for trade
+            compliance and ethics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand-mark">BENHAMADEN</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <a href="index.html" class="logo magnetic-item" style="margin-bottom: 25px; display: block">
+            <i class="fas fa-globe"></i> BenHamaden
+          </a>
+          <p data-i18n="footer.tagline" style="
+                color: var(--text-secondary);
+                margin-bottom: 30px;
+                line-height: 1.8;
+              ">
+            A Legacy of Global Trade Excellence Since 1970. Connecting markets
+            with integrity and precision.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.quicklinks">Quick Links</h3>
+          <ul class="footer-links" style="margin-top: 20px">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li>
+              <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+            </li>
+            <li>
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.services.title">Services</h3>
+          <ul class="footer-links" style="margin-top: 20px">
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.export">Export Operations</a>
+            </li>
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.import">Import Solutions</a>
+            </li>
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.customs">Customs Clearance</a>
+            </li>
+            <li><a href="expertise.html">Logistics Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.contact">Contact Info</h3>
+          <div style="margin-top: 20px">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Avenue Charles de Gaulle, N'Djamena, Chad</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+235 66406019</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>support@benhamaden.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">
+          &copy; 2023 BenHamaden. All Rights Reserved.
+        </p>
+        <div style="display: flex; gap: 30px">
+          <a href="#" style="color: var(--text-secondary); text-decoration: none">Privacy Policy</a>
+          <a href="#" style="color: var(--text-secondary); text-decoration: none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      if (loader) {
+        gsap.to(loader, {
+          opacity: 0,
+          duration: 0.5,
+          onComplete: () => (loader.style.display = "none"),
+        });
+      }
+    });
+
+    const header = document.getElementById("main-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.querySelector("i").classList.toggle("fa-times");
+      });
+    }
+  </script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script src="assets/js/premium.js"></script>
+</body>
+
+</html>

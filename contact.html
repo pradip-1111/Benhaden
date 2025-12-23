@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - BenHamaden | Global Trade Inquiry & Support</title>
+  <meta name="description"
+    content="Get in touch with BenHamaden for your global trade, export, import, and logistics needs. Our team in N'Djamena, Chad is ready to assist you.">
+  <meta name="keywords"
+    content="Contact BenHamaden, Trade Inquiry, Support, Export Import Contact Chad, N'Djamena Office">
+  <link rel="canonical" href="https://www.benhamaden.com/contact.html" />
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+  <style>
+    .page-header {
+      padding: 180px 0 100px;
+      background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.8)),
+        url("https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 50px;
+      margin-top: -50px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .contact-info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 30px;
+      padding: 40px;
+      height: fit-content;
+    }
+
+    .contact-method {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-form-card {
+      background: var(--card-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 30px;
+      padding: 50px;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .form-control {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 15px 20px;
+      color: var(--white);
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .map-section {
+      height: 450px;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-top: 50px;
+      border: 1px solid var(--glass-border);
+    }
+
+    @media (max-width: 992px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        padding-top: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <nav class="container">
+      <a href="index.html" class="logo magnetic-item">
+        <i class="fas fa-globe"></i> BenHamaden
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li>
+          <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+        </li>
+        <li><a href="values.html" data-i18n="nav.values">Values</a></li>
+        <li><a href="heritage.html" data-i18n="nav.heritage">Heritage</a></li>
+        <li>
+          <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
+        </li>
+        <li class="lang-switch">
+          <select id="lang-toggle" class="lang-select">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="ar">العربية</option>
+            <option value="es">Español</option>
+            <option value="zh">中文</option>
+          </select>
+        </li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container" data-aos="fade-up">
+      <h1 data-i18n="contact.header.title" style="font-size: 3.5rem; margin-bottom: 20px">
+        Get In Touch
+      </h1>
+      <p data-i18n="contact.header.subtitle" style="
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+          ">
+        Our team is ready to assist you with your international trade needs
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="contact-content" style="padding: 0 0 100px; position: relative; overflow: hidden">
+    <div class="text-huge" style="top: 10%; left: -2%">CONTACT</div>
+    <div class="container">
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info-card" data-aos="fade-right">
+          <h2 data-i18n="contact.info.title" style="margin-bottom: 30px; color: var(--white)">
+            Contact Information
+          </h2>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 data-i18n="contact.info.address.title" style="color: var(--accent-color); margin-bottom: 5px">
+                Headquarters
+              </h4>
+              <p style="color: var(--text-secondary)">
+                Avenue Charles de Gaulle, N'Djamena, Chad
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4 data-i18n="contact.info.phone.title" style="color: var(--accent-color); margin-bottom: 5px">
+                Phone
+              </h4>
+              <p style="color: var(--text-secondary)">+23566280776</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4 data-i18n="contact.info.email.title" style="color: var(--accent-color); margin-bottom: 5px">
+                Email
+              </h4>
+              <p style="color: var(--text-secondary)">support@benhamaden.com</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4 data-i18n="contact.info.hours.title" style="color: var(--accent-color); margin-bottom: 5px">
+                Working Hours
+              </h4>
+              <p style="color: var(--text-secondary)">
+                Mon - Fri: 8:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 40px">
+            <h4 data-i18n="contact.info.social" style="color: var(--white); margin-bottom: 20px">
+              Connect With Us
+            </h4>
+            <div style="display: flex; gap: 15px">
+              <a href="#" class="btn btn-outline" style="
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    line-height: 40px;
+                    border-radius: 50%;
+                  "><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="btn btn-outline" style="
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    line-height: 40px;
+                    border-radius: 50%;
+                  "><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline" style="
+                    width: 40px;
+                    height: 40px;
+                    padding: 0;
+                    line-height: 40px;
+                    border-radius: 50%;
+                  "><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card" data-aos="fade-left">
+          <h2 data-i18n="contact.form.title" style="margin-bottom: 30px; color: var(--white)">
+            Send us a Message
+          </h2>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="4f2070b7-068c-4a61-8cd4-e2fbc73522ca" />
+            <input type="hidden" name="redirect" value="" id="form-redirect">
+            <script>
+              document.getElementById('form-redirect').value = window.location.origin + window.location.pathname.replace('contact.html', 'index.html');
+            </script>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+              <div class="form-group">
+                <label data-i18n="contact.form.name">Full Name</label>
+                <input type="text" name="name" class="form-control" required placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label data-i18n="contact.form.email">Email Address</label>
+                <input type="email" name="email" class="form-control" required placeholder="john@example.com" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.form.subject">Subject</label>
+              <select name="subject" class="form-control">
+                <option value="Trade Inquiry">Trade Inquiry</option>
+                <option value="Logistics Support">Logistics Support</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="contact.form.message">Message</label>
+              <textarea name="message" class="form-control" rows="5" required
+                placeholder="Tell us how we can help..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic-item" style="width: 100%">
+              <span data-i18n="contact.form.submit">Send Message</span>
+              <i class="fas fa-paper-plane" style="margin-left: 10px"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map-section" data-aos="zoom-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15444.66444855734!2d15.0444!3d12.1348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10f924f7f5a8a8a7%3A0x7b8b7b8b7b8b7b8b!2sN'Djamena%2C%20Chad!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand-mark">BENHAMADEN</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <a href="index.html" class="logo magnetic-item" style="margin-bottom: 25px; display: block">
+            <i class="fas fa-globe"></i> BenHamaden
+          </a>
+          <p data-i18n="footer.tagline" style="
+                color: var(--text-secondary);
+                margin-bottom: 30px;
+                line-height: 1.8;
+              ">
+            A Legacy of Global Trade Excellence Since 1970. Connecting markets
+            with integrity and precision.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-circle magnetic-item"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.quicklinks">Quick Links</h3>
+          <ul class="footer-links" style="margin-top: 20px">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+            <li>
+              <a href="expertise.html" data-i18n="nav.expertise">Expertise</a>
+            </li>
+            <li>
+              <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.services.title">Services</h3>
+          <ul class="footer-links" style="margin-top: 20px">
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.export">Export Operations</a>
+            </li>
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.import">Import Solutions</a>
+            </li>
+            <li>
+              <a href="expertise.html" data-i18n="footer.services.customs">Customs Clearance</a>
+            </li>
+            <li><a href="expertise.html">Logistics Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer.contact">Contact Info</h3>
+          <div style="margin-top: 20px">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Avenue Charles de Gaulle, N'Djamena, Chad</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+235 66406019</p>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>support@benhamaden.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">
+          &copy; 2023 BenHamaden. All Rights Reserved.
+        </p>
+        <div style="display: flex; gap: 30px">
+          <a href="#" style="color: var(--text-secondary); text-decoration: none">Privacy Policy</a>
+          <a href="#" style="color: var(--text-secondary); text-decoration: none">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      if (loader) {
+        gsap.to(loader, {
+          opacity: 0,
+          duration: 0.5,
+          onComplete: () => (loader.style.display = "none"),
+        });
+      }
+    });
+
+    const header = document.getElementById("main-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    });
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.querySelector("i").classList.toggle("fa-times");
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/dist/lenis.min.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script src="assets/js/premium.js"></script>
+</body>
+
+</html>
