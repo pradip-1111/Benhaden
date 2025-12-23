@@ -265,12 +265,9 @@
           <h2 data-i18n="contact.form.title" style="margin-bottom: 30px; color: var(--white)">
             Send us a Message
           </h2>
-          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+          <form action="#" method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="4f2070b7-068c-4a61-8cd4-e2fbc73522ca" />
-            <input type="hidden" name="redirect" value="" id="form-redirect">
-            <script>
-              document.getElementById('form-redirect').value = window.location.origin + window.location.pathname.replace('contact.html', 'index.html');
-            </script>
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
               <div class="form-group">
                 <label data-i18n="contact.form.name">Full Name</label>
@@ -311,6 +308,73 @@
       </div>
     </div>
   </section>
+
+  <!-- Thank You Modal -->
+  <div class="thank-you-modal" id="thank-you-modal">
+    <div class="modal-content">
+      <div class="success-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3 class="modal-title">Thank You!</h3>
+      <p class="modal-message">Your message has been sent successfully.</p>
+      <p class="modal-message" style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Redirecting to home page...
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const modal = document.getElementById('thank-you-modal');
+
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Show loading state could go here if implemented
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
+        })
+          .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+              // Success
+              modal.classList.add('active');
+
+              setTimeout(() => {
+                window.location.href = 'index.html';
+              }, 3000);
+
+              form.reset();
+            } else {
+              console.log(response);
+              alert(json.message || 'Something went wrong. Please try again.');
+              submitBtn.innerHTML = originalBtnText;
+              submitBtn.disabled = false;
+            }
+          })
+          .catch(error => {
+            console.log(error);
+            alert('Something went wrong. Please try again.');
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+          });
+      });
+    }
+  </script>
 
   <!-- Footer -->
   <footer>
