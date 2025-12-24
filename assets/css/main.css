@@ -246,10 +246,20 @@ nav {
   font-size: 1.5rem;
   color: var(--white);
   transition: var(--transition);
+  padding: 10px;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-toggle:hover {
   color: var(--accent-color);
+}
+
+.menu-toggle:active {
+  transform: scale(0.95);
 }
 
 /* Language Switcher Refinement */
@@ -310,7 +320,7 @@ nav {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex !important;
     z-index: 10001;
   }
 }
