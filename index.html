@@ -602,13 +602,8 @@
             }
         });
 
-        // Mobile Menu
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.querySelector('i').classList.toggle('fa-times');
-        });
+        // Mobile Menu - handled by premium.js
+
 
         // GSAP Counter Animation
         gsap.registerPlugin(ScrollTrigger);
