@@ -302,7 +302,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 40px;
-    z-index: 999;
+    z-index: 10000;
   }
 
   .nav-links.active {
@@ -311,7 +311,7 @@ nav {
 
   .menu-toggle {
     display: block;
-    z-index: 1000;
+    z-index: 10001;
   }
 }
 
